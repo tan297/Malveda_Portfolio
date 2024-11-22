@@ -100,6 +100,23 @@ header nav ul li a:hover {
     margin: 10px 0;
 }
 
+#hobbies .hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.hobby {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hobby img {
+    height: 200px;
+}
+
 /* Education Section */
 #education .education-grid {
     display: grid;
