@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Enhanced Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>I'm Tan Malveda Bsit Studying at Columban College</h1>
+        <p>my profile</p>
+        <button onclick="scrollToSection('#contact')"><img src="" alt=""></button>
+        
+    </section>
+    
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I’m a passionate web designer with experience in creating beautiful and functional websites.</p>
+        <img src="" alt="462553462_1174529700310275_1077733220334297994_n">
+    </section>
+    
+
+    <!-- Skills Section (Animated) -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <p>HTML</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>CSS</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%;"></div>
+                </div>
+            </div>
+            <!-- Add more skills here -->
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-gallery">
+            <div class="project-item" onclick="openModal('modal1')">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project One</h3>
+            </div>
+            <div class="project-item" onclick="openModal('modal2')">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project Two</h3>
+            </div>
+            <!-- Add more projects here -->
+        </div>
+    </section>
+
+    <!-- Project Modal 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Project One</h2>
+            <p>Detailed information about Project One...</p>
+        </div>
+    </div>
+
+    <!-- Project Modal 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Project Two</h2>
+            <p>Detailed information about Project Two...</p>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Clients Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <p>"Great work! The website turned out perfect."</p>
+                <h4>– Client A</h4>
+            </div>
+    
