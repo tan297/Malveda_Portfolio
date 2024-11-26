@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -20,7 +19,7 @@ h2 {
     color: #62df0f;
 }
 
-/* Header */
+
 header {
     background: #343636;
     color: #f8f2f785;
@@ -57,7 +56,7 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Profile Section */
+
 #profile {
     padding: 120px 20px 60px;
     background: #399696;
@@ -81,11 +80,90 @@ header nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the video scales and crops to fit */
-    z-index: -1; /* Sends video behind the content */
+    object-fit: cover; 
+    z-index: -1; 
   }
-  
-/* Skills Section */
+  h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    color: #fbfaff;
+    text-shadow: 0 0 10px rgba(108, 92, 231, 0.8);
+}
+
+h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #ffcc00;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.skill {
+    text-align: center;
+    background: #f4f4f4;
+    border: 2px solid #6c5ce7;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover {
+    background: #6c5ce7;
+    color: white;
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px gba(166, 161, 207, 0.8);
+}
+
+.skill img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+  skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.skill {
+    text-align: center;
+    background: #f4f4f4;
+    border: 2px solid #6c5ce7;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skill:hover {
+    background: #6c5ce7;
+    color: white;
+    transform: translateY(-10px);
+}
+
+.skill img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
 #skills .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -104,7 +182,7 @@ header nav ul li a:hover {
     height: 200px;
 }
 
-/* Hobbies Section */
+
 #hobbies .hobbies-list {
     list-style: none;
     padding: 0;
@@ -133,7 +211,7 @@ header nav ul li a:hover {
     height: 300px;
 }
 
-/* Education Section */
+
 #education .education-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -150,8 +228,43 @@ header nav ul li a:hover {
 .education-item img {
     height: 200px;
 }
+.socials-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
 
-/* Socials Section */
+.socials-list li {
+    list-style: none;
+    text-align: center;
+}
+
+.socials-list li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: #6c5ce7;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.socials-list li a:hover {
+    background: #ffcc00;
+    transform: scale(1.1);
+}
+
+.socials-list li img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
 #socials .socials-list {
     list-style: none;
     padding: 0;
@@ -171,15 +284,19 @@ header nav ul li a:hover {
     text-decoration: none;
     font-weight: 1000;
 }
-
-#socials .socials-list li a:hover {
-    color: #007BFF;
+.socials-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
 }
-
-/* Footer */
 footer {
     background: #333;
     color: #fff;
     padding: 20px 0;
     text-align: center;
 }
+
